@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Astloch:wght@400;700&display=swap');
+
+.subtitle {
+   font-family: 'Montserrat', sans-serif;
+   font-size: 3rem;
+   margin: 0;
+   padding-left: 3rem;
+   padding-top: 2rem;
+}
+
+.centeredtext {
+   position: absolute;
+   font-family: 'Astloch', serif;
+   font-weight: 400;
+   font-size: 4rem;
+   transform: translate(-50%, -50%);
+   margin-top: -1rem;
+   z-index: 2;
+   top: 50%;
+   left: 50%;
+}
+
+.footer {
+   position: absolute;
+   font-family: 'Roboto', sans-serif;
+   top:90%;
+   left: 50%;
+   transform: translate(-50%, 0%);
+}
+
+.fullpagediv {
+   width: 100vw;
+   height: 100vh;
+}
