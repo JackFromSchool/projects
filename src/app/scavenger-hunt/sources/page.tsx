@@ -51,6 +51,12 @@ Erpek, E., & DAĞLIOĞLU, E. K. (2023). Unfolding the Potentials of the Oblique 
             <p className={styles.citationtext}>
 Excerpt from “An interview with the partners of DS+R: Democratizing Space.” (n.d.). A+U Architecture and Urbanism Magazine. https://au-magazine.com/interviews/dsr-democratizing-space/            </p>
          </div>
+         <h2 className={styles.header}>Additional Mentions</h2>
+         <ul>
+            <li className={styles.listitem}>Photographs courtesy of Larry Speck and Arch Daily.</li>
+            <li className={styles.listitem}>Photo album photographs courtesy of Larry Dean. (https://flic.kr/ps/2gXw7v)</li>
+            <li className={styles.listitem}>Architectural Drawings courtesy of Architectural Record. (https://www.architecturalrecord.com/articles/11972-roy-and-diana-vagelos-education-center-at-columbia-university-medical-center-by-diller-scofidio-renfro)</li>
+         </ul>
       </>
    )
 }

@@ -21,6 +21,11 @@
    height: 100%;
 }
 
+.model {
+   width: 100vw;
+   height: 100vh;
+}
+
 .title {
    display: inline-block;
    font-family: 'Audiowide', serif;

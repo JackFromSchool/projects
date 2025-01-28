@@ -214,12 +214,16 @@ Theory in Educating the Cosmopolitan Architect<Citation id="7"/></h3>
                <p className={styles.bodytext}>The large windows and well lit environment make the interior of the building completely public at night.</p>
             </div>
          </div>
+         <hr className={styles.nomargin}/>
          <h2 className={styles.header}>My Drawing</h2>
          <Image
             className={styles.fullscreenimage}
             src={drawing}
             alt="My drawing of the education center"
          />
+         <hr className={styles.nomargin}/>
+         <h2 className={styles.header}>Cool 3D Model I Found</h2>
+<div> <iframe className={styles.model} title="Roy and Diana Vagelos Education Center, New York" frameBorder="0" allowFullScreen allow="autoplay; fullscreen; xr-spatial-tracking" execution-while-out-of-viewport="true" execution-while-not-rendered="true" web-share="true" src="https://sketchfab.com/models/fa679f1104924d9ba0a9ce41f6d85e32/embed?dnt=1"> </iframe> </div>
       </>
    );
 }
