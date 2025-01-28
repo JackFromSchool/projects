@@ -9,6 +9,12 @@ import plan5 from './plan5.jpg';
 import stairs from './stairs_to_future.jpg';
 import cascade from './glass_cascade.jpg';
 import interior from './interior.jpg';
+import album1 from './album1.jpg';
+import album2 from './album2.jpg';
+import album3 from './album3.jpg';
+import album4 from './album4.jpg';
+import album5 from './album5.jpg';
+import drawing from './drawing.jpg';
 
 import styles from './scavenger.module.css';
 import Citation from './citation';
@@ -114,7 +120,7 @@ export default function Home() {
          <div className={styles.sidebyside}>
             <div className={styles.innersidebyside}>
                <div>
-                  <h2 className={styles.subtitles}>The Cascades Flow</h2>
+                  <h2 className={styles.subtitles}>The Cascades Flow<Citation id="5"/></h2>
                   <p className={styles.bodytext}>In this image we see the broken up floor plan of the cascade. Stairs are going over other stairs that reach over floors that aren't exactly level. However, the warm wood panelling helps to make the chaos of the environment more inviting.</p>
                </div>
                <Image
@@ -123,8 +129,75 @@ export default function Home() {
                   alt="Picture of the interior of the cascade."
                />
             </div>
-
+            <div>
+               <h3 className={styles.subtitles}>Interview<Citation id="3"/></h3>
+<div className="padding: 0 0 0;margin-top:1rem;"><iframe src="https://player.vimeo.com/video/239828816?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" className="position:absolute;top:0;left:0;width:100%;height:100%;" title="66 // LIZ DILLER // Vagelos Education Center // ENG"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+               <p className={styles.bodytext}>
+                  From this interview with the architect, Elizabeth Diller, we are able to gain a sense of the thought process that went into designing the Education Center. In her interview, Diller primarily focuses on the construction of the cascade portion of the center. She describes how she wanted to create many uniquely sized spaces that are all interconnected, to promote communication. She does this by making a "cascading" patter, from which the space gains its name. Spaces are interconnected by stairs and go around the southern portion of the building, allowing one to look out all around the scenery that surrounds the center from any of it's 14 floors. This separates the Education Center from other buildings that might have a more generic, or simplistic, approach to creating individual spaces.
+               </p>
+            </div>
+            <div>
+               <h3 className={styles.subtitles}>Roy and Diana Vagelos Education Center Review<Citation id="4"/></h3>
+               <p className={styles.bodytext}>
+                  An architectural review, from The Guardian, found the Education Center lived up to it's promise of being state of the art. However, they found that it's futuristic look seemed somewhat dated. They related it to the weird feeling you get when the word "cyber" is used in a sci-fi novel. For the most part I agree with that assessment. While I was researching this building, I enjoyed the overall look but something felt subconsciously "tacky". Stamp's "cyber" assessment perfectly captured what I was feeling. The center looks as though it is straight from a sci-fi movie, and that makes it come off as somewhat melodramatic. While it shines in it's use of space, the aesthetics can't help but feel a little off.
+               </p>
+            </div>
+            <div>
+               <h3 className={styles.subtitles}>A Place for Transformational Learning<Citation id="6"/></h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IlCoT-LTih0?si=WmkdgAph5__O4lsT" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+               <p className={styles.bodytext}>This video goes more into depth on the classroom spaces of the center and how they help to accelerate and improve learning. One key point was the modularity of the classroom spaces. Classrooms are wide open spaces and workstations aren't closed off at all. This means from one point in the classroom you can see what your classmates are doing and more easily collaborate with them.</p>
+            </div>
          </div>
+         <hr className={styles.nomargin}/>
+         <h2 className={styles.header}>Album</h2>
+         <div className={styles.photogrid}>
+            <div>
+               <Image
+                  className={styles.albumimage}
+                  src={album1}
+                  alt="Photo album"
+               />
+               <p className={styles.bodytext}>Angle shows how the interior design of the building influences the photography of its space.</p>
+            </div>
+            <div>
+               <Image
+                  className={styles.albumimage}
+                  src={album2}
+                  alt="Photo album"
+               />
+               <p className={styles.bodytext}>An interesting "liminal" image. Shows how the spaces for movement feel when empty.</p>
+            </div>
+            <div>
+               <Image
+                  className={styles.albumimage}
+                  src={album3}
+                  alt="Photo album"
+               />
+               <p className={styles.bodytext}>The outside of the building is filled with blocks of warmth from the wood panelling.</p>
+            </div>
+            <div>
+               <Image
+                  className={styles.albumimage}
+                  src={album4}
+                  alt="Photo album"
+               />
+               <p className={styles.bodytext}>From this perspective, the cascading stairs almost look like a maze.</p>
+            </div>
+            <div>
+               <Image
+                  className={styles.albumimage}
+                  src={album5}
+                  alt="Photo album"
+               />
+               <p className={styles.bodytext}>The large windows and well lit environment make the interior of the building completely public at night.</p>
+            </div>
+         </div>
+         <h2 className={styles.header}>My Drawing</h2>
+         <Image
+            className={styles.fullscreenimage}
+            src={drawing}
+            alt="My drawing of the education center"
+         />
       </>
    );
 }
