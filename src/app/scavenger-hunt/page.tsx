@@ -8,6 +8,7 @@ import plan4 from './plan4.jpg';
 import plan5 from './plan5.jpg';
 import stairs from './stairs_to_future.jpg';
 import cascade from './glass_cascade.jpg';
+import interior from './interior.jpg';
 
 import styles from './scavenger.module.css';
 import Citation from './citation';
@@ -104,6 +105,26 @@ export default function Home() {
          </div>
          <hr className={styles.nomargin}/>
          <h3 className={styles.header}>Perspective from Academia</h3>
+         <h3 className={styles.subtitles}>In the Heights<Citation id="2"/></h3>
+         <p className={styles.bodytext}>
+            This article focuses primarily on the design of the "study cascade" that makes up the south side of the Education Center. The cascade's use of large concrete slabs that are seemingly held up by nothing, but thin glass panels, was unsurprisingly difficult to construct structurally. The project's structural engineers, Leslie E. Robertson Associates, had to use a variety of techniques in order to hold up the building. Part of these techniques was a combination of post-tensioning and void formers, the first time these techniques have been combined in America. While these large overhangs alone would make the building somewhat imposing, the architects used warm colors and textures inside to help make the center more inviting. These efforts proved fruitful as students could be seen using all the various parts of the cascade.
+         </p>
+         <hr className={styles.nomargin}/>
+         <h3 className={styles.header}>Assorted Perspectives</h3>
+         <div className={styles.sidebyside}>
+            <div className={styles.innersidebyside}>
+               <div>
+                  <h2 className={styles.subtitles}>The Cascades Flow</h2>
+                  <p className={styles.bodytext}>In this image we see the broken up floor plan of the cascade. Stairs are going over other stairs that reach over floors that aren't exactly level. However, the warm wood panelling helps to make the chaos of the environment more inviting.</p>
+               </div>
+               <Image
+                  className={styles.quarterscreenimage}
+                  src={interior}
+                  alt="Picture of the interior of the cascade."
+               />
+            </div>
+
+         </div>
       </>
    );
 }
