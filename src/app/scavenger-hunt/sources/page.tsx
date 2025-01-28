@@ -40,6 +40,17 @@ Baan, I. (n.d.). Gallery of Roy and Diana Vagelos Education Center / Diller Scof
 Vagelos College of Physicians & Surgeons, Columbia. (2019, June 10). A place for Transformational Learning: Roy and Diana Vagelos Education Center [Video]. YouTube. https://www.youtube.com/watch?v=IlCoT-LTih0
             </p>
          </div>
+         <div className={styles.flex} id="7">
+            <h2 className={styles.subtitles}>[7]:</h2>
+            <p className={styles.citationtext}>
+Erpek, E., & DAĞLIOĞLU, E. K. (2023). Unfolding the Potentials of the Oblique Function Theory in Educating the Cosmopolitan Architect.
+            </p>
+         </div>
+         <div className={styles.flex} id="8">
+            <h2 className={styles.subtitles}>[8]:</h2>
+            <p className={styles.citationtext}>
+Excerpt from “An interview with the partners of DS+R: Democratizing Space.” (n.d.). A+U Architecture and Urbanism Magazine. https://au-magazine.com/interviews/dsr-democratizing-space/            </p>
+         </div>
       </>
    )
 }

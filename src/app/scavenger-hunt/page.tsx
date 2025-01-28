@@ -35,7 +35,8 @@ export default function Home() {
                <h3 className={styles.header}>PURPOSE</h3>
                <p className={styles.bodytext}>
                   Prior to the construction of the Education Center, Columbia's Irving Medical School was essentially lacking a campus. It taught it's students in hospitals around the New York area however it lacked a central unifying force. The Education center was meant to unify the Medical Center and provide a true campus.<Citation id="1"/> For this reason the building was designed with a multitude of office, classroom, and study spaces. These allow the building to act as a hub for students and faculty that attend the medical school.<br/><br/>
-                  In addition to being the hub for those who are directly involved with the Irving Medical school, the building acts, secondarily, as the icon for the school itself. It is immediately apparent how it does this when viewed from google street view. The building, though in place in terms of elevation, stands out at you from the less modern neighborhood it is located in. Immediately upon seeing it, you know that it is something new, something groundbreaking. That plays well with the kind of energy the Irving Medical School wishes to give off. Columbia wants to attract new students and the Medical Center shows that their school is further ahead than the competition. 
+                  In addition to being the hub for those who are directly involved with the Irving Medical school, the building acts, secondarily, as the icon for the school itself. It is immediately apparent how it does this when viewed from google street view. The building, though it fits in in terms of elevation, stands out at you from the less modern neighborhood it is located in. Immediately upon seeing it, you know that it is something new, something groundbreaking. That plays well with the kind of energy the Irving Medical School wishes to give off. Columbia wants to attract new students and the Medical Center shows that their school is further ahead than the competition.<br/><br/>
+                  Ground was broken for this project on September 16th, 2013. The building was opened on August 15th, 2016.<Citation id="1"/>
                </p>
             </div>
             <div>
@@ -115,6 +116,13 @@ export default function Home() {
          <p className={styles.bodytext}>
             This article focuses primarily on the design of the "study cascade" that makes up the south side of the Education Center. The cascade's use of large concrete slabs that are seemingly held up by nothing, but thin glass panels, was unsurprisingly difficult to construct structurally. The project's structural engineers, Leslie E. Robertson Associates, had to use a variety of techniques in order to hold up the building. Part of these techniques was a combination of post-tensioning and void formers, the first time these techniques have been combined in America. While these large overhangs alone would make the building somewhat imposing, the architects used warm colors and textures inside to help make the center more inviting. These efforts proved fruitful as students could be seen using all the various parts of the cascade.
          </p>
+         <h3 className={styles.subtitles}>Unfolding the Potentials of the Oblique Function
+Theory in Educating the Cosmopolitan Architect<Citation id="7"/></h3>
+         <p className={styles.bodytext}>
+            This article examines how the cosmopolitan architect, one whom might wish to promote ideas of diversity and togetherness, might use oblique forms to create spaces for education. It goes into some history of the Oblique Function Theory and the meaning behind its terms, and then examines two buildings to see how their oblique forms aided togetherness. One of those buildings is the Education Center. The authors propose that the oblique forms found in the building's cascade helps to create openness which fosters togetherness and cooperation. The article then concludes by proposing that these oblique forms are a tool for education and one which is valuable to the cosmopolitan architect.
+         <br/>
+         <br/>
+         </p>
          <hr className={styles.nomargin}/>
          <h3 className={styles.header}>Assorted Perspectives</h3>
          <div className={styles.sidebyside}>
@@ -146,6 +154,20 @@ export default function Home() {
                <h3 className={styles.subtitles}>A Place for Transformational Learning<Citation id="6"/></h3>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IlCoT-LTih0?si=WmkdgAph5__O4lsT" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                <p className={styles.bodytext}>This video goes more into depth on the classroom spaces of the center and how they help to accelerate and improve learning. One key point was the modularity of the classroom spaces. Classrooms are wide open spaces and workstations aren't closed off at all. This means from one point in the classroom you can see what your classmates are doing and more easily collaborate with them.</p>
+            </div>
+            <div>
+               <h3 className={styles.subtitles}>An Interview With the Partners of DS+R<Citation id="8"/></h3>
+               <ol>
+                  <li className={styles.listitem}>DS+R seek to democratize cities by creating more public spaces.</li>
+                  <li className={styles.listitem}>Part of creating space is opening new sightlines that make the space you have seem bigger than it might actually be.</li>
+                  <li className={styles.listitem}>You can make a building more energetic by creating spaces that foster that energy.</li>
+               </ol>
+            </div>
+            <div>
+               <h3 className={styles.subtitles}>View from Google Earth</h3>
+               <p className={styles.bodytext}>
+                  When viewing the education center from google earth, it is easy to see how it stands out from the rest of it's urban surroundings. While it matches the height of the buildings that surround it, it appears more modern than the other older constructions. This kind of contrast likely acts to draw people to the building which helps to bring attention to the Irving Medical School. 
+               </p>
             </div>
          </div>
          <hr className={styles.nomargin}/>
