@@ -106,7 +106,7 @@ export default function Home() {
                <br/>
                <h3 className={styles.subtitles}>Looking up at the Glass Cascade</h3>
                <p className={styles.bodytext}>
-                  In this shot, we see the "cascade" portion of the building. This is the part of the building that was designed to promote collaboration, by creating an interesting layering of spaces. However, from the outside we can see that this combines to create an effect of cascading water, hence the name "cascade". The use of plain glass walls, only lightly framed by aluminum columns, directly mimics the look of water. Additionally, the white glass-reinforced concrete almost mimics light-washed stone that one might see by a seashore. This combination of material choice and design pattern, helps to create a more natural look. This likely goes hand in hand with the buildings location near the Hudson River.
+                  In this shot, we see the "cascade" portion of the building. This is the part of the building that was designed to promote collaboration, by creating an interesting layering of spaces. However, from the outside we can see that this combines to create an effect of cascading water, hence the name "cascade". The use of plain glass walls, only lightly framed by aluminum columns, directly mimics the look of water. Additionally, the white glass fiber reinforced concrete almost mimics light-washed stone that one might see by a seashore. This combination of material choice and design pattern, helps to create a more natural look. This likely goes hand in hand with the buildings location near the Hudson River.
                </p>
             </div>
          </div>
