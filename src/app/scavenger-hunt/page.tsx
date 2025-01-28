@@ -7,6 +7,7 @@ import plan3 from './plan3.jpg';
 import plan4 from './plan4.jpg';
 import plan5 from './plan5.jpg';
 import stairs from './stairs_to_future.jpg';
+import cascade from './glass_cascade.jpg';
 
 import styles from './scavenger.module.css';
 import Citation from './citation';
@@ -38,6 +39,7 @@ export default function Home() {
                />
             </div>
          </div>
+         <hr className={styles.nomargin}/>
          <h3 className={styles.header}>Gallery of Plans</h3>
          <div className={styles.photogrid}>
                <Image
@@ -66,14 +68,17 @@ export default function Home() {
                   alt="Picture of the Education Center at night."
                />
          </div>
+         <hr className={styles.nomargin}/>
          <h3 className={styles.header}>Examination of Exterior</h3>
          <div className={styles.sidebyside}>
             <div>
+               <br/>
+               <br/>
                <h3 className={styles.subtitles}>
                   Stairs to the Future
                </h3>
                <p className={styles.bodytext}>
-                  In this shot, we see a set of stairs that start out wide and slowly decrease in size as they reach up to the Education Center
+                  In this shot, we see a set of stairs that start out wide and slowly decrease in size as they reach up to the Education Center. Although at the top there is a gate, likely for security measures laid out by the University of Columbia, the wide open start of the stairs gives of an inviting atmosphere. It shows that there is a low barrier to entry, perhaps that anyone can learn the craft that is taught in this building. However, as with your career, as you move further in your career you will inevitably grow more specialized, just as the stairs lower their scope to become smaller near the top. These stairs, in that sense, represent the journey you will take, should you decide to attend the Irving Medical School.
                </p>
             </div>
             <Image
@@ -83,9 +88,22 @@ export default function Home() {
             />
          </div>
          <div className={styles.sidebyside}>
-            <p>
-            </p>
+            <Image
+               className={styles.halfscreenimage}
+               src={cascade}
+               alt="Education Center, photographed from ground level looking up at the cascade portion."
+            />
+            <div>
+               <br/>
+               <br/>
+               <h3 className={styles.subtitles}>Looking up at the Glass Cascade</h3>
+               <p className={styles.bodytext}>
+                  In this shot, we see the "cascade" portion of the building. This is the part of the building that was designed to promote collaboration, by creating an interesting layering of spaces. However, from the outside we can see that this combines to create an effect of cascading water, hence the name "cascade". The use of plain glass walls, only lightly framed by aluminum columns, directly mimics the look of water. Additionally, the white glass-reinforced concrete almost mimics light-washed stone that one might see by a seashore. This combination of material choice and design pattern, helps to create a more natural look. This likely goes hand in hand with the buildings location near the Hudson River.
+               </p>
+            </div>
          </div>
+         <hr className={styles.nomargin}/>
+         <h3 className={styles.header}>Perspective from Academia</h3>
       </>
    );
 }

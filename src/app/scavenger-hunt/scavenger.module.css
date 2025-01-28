@@ -6,7 +6,7 @@
 }
 
 .halfscreenimage {
-   width: calc(50vw - 1rem);
+   width: 50vw;
    height: 100%
 }
 
@@ -58,6 +58,10 @@
 .photogrid {
    display: grid;
    grid-template-columns: 1fr 1fr;
+}
+
+.nomargin {
+   margin: 0;
 }
 
 @media only screen and (max-width: 600px) {
