@@ -1,0 +1,74 @@
+---
+import FirstPage from '../components/FirstPage.astro';
+
+import ProjectShowcase from "../components/ProjectShowcase.astro";
+import { Image } from "astro:assets";
+
+import overviewImage from '../images/battleship/overview.avif'
+import shipBoardImage from '../images/battleship/ship_board.avif';
+import hitBoardImage from '../images/battleship/hit_board.avif';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- Font Imports -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Astloch:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      <link rel="icon" type="image/svg+xml", href="/js.svg">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title></title>
+   </head>
+   <body>
+      <section class="scroll-child">
+         <FirstPage/>
+      </section>
+      <section class="scroll-child">
+         <ProjectShowcase title="ECE 319: Battleship", link="/battleship">
+            <Fragment slot="images">
+               <Image src={overviewImage} alt="Battleship project PCB, showing the screen, controls, and various components." class="image"/>
+               <Image src={shipBoardImage} alt="Battleship project PCB, showing the screen with a battleship board showing ships." class="image"/>
+               <Image src={hitBoardImage} alt="Battleship project PCB, showing the screen with a battleship board showing hits." class="image"/>
+            </Fragment>
+            <p>
+               This was me and my partner's final project for ECE 319H: Introduction to Embedded Systems Honors. It is a fully working recreation of the game battleship that was made using the MSPM0G350x series of microcontrollers. 
+            </p>
+            <h3>
+               Key Skills
+            </h3>
+            <ul>
+               <li>
+                  Learned how to interact with a microcontroller ecosystem; reading datasheets, understanding conventions.
+               </li>
+               <li>
+                  Gained experience with using interrupts and atomic operations.
+               </li>
+               <li>
+                  Built a robust event loop that matched the specific requirements for this project.
+               </li>
+               <li>
+                  Gained experience in the principles of PCB design and circuit theory.
+               </li>
+            </ul>
+         </ProjectShowcase>
+      </section>
+   </body>
+</html>
+
+<style>
+html, body {
+   margin: 0;
+   scroll-snap-type: y mandatory;
+}
+
+.scroll-child {
+   scroll-snap-align: start end;
+}
+
+.fullpagediv {
+   width: 100vw;
+   height: 100vh;
+} 
+</style>

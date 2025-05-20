@@ -1,0 +1,112 @@
+---
+interface Props {
+   title: string;
+   link: string;
+}
+
+const { title, link } = Astro.props;
+---
+
+<div class="full-page">
+   <h2>
+      {title}
+   </h2>
+   <div class="side-by-side">
+      <div class="half-page">
+         <slot name="images"/>
+      </div>
+      <div class="half-page">
+         <slot/>
+         <a href={link}>Project Writeup</a>
+      </div>
+   </div>
+</div>
+
+<style is:global>
+.full-page {
+   display: block;
+   min-height: 100vh;
+   width: 100vw;
+   padding-bottom: min(max(0, 100% - 100vh) * 500rem, 50vh);
+}
+
+.side-by-side {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+
+.half-page {
+   width: 50vw;
+}
+
+h2 {
+   font-family: "Montserrat", sans-serif;
+   font-weight: 400;
+   font-size: min(8vw, 3rem);
+   margin: 0;
+   padding-left: 1rem;
+   padding-top: 1rem;
+   padding-bottom: .5rem;
+}
+
+h3 {
+   font-family: "Montserrat", sans-serif;
+   font-weight: 400;
+   font-size: min(6vw, 2rem);
+   margin: 0;
+   padding-left: 1rem;
+}
+
+a {
+   font-family: "Montserrat", sans-serif;
+   font-size: 2rem;
+   margin-left: 1rem;
+   margin-top: 2rem;
+   color: hsl(0, 0%, 0%);
+}
+
+p {
+   font-family: "Roboto", sans-serif;
+   font-size: 1rem;
+   margin-left: 1rem;
+   margin-right: 1rem;
+   line-height: 1.4rem;
+}
+
+ul {
+   margin-left: 1rem;
+   margin-right: 1rem;
+}
+
+li {
+   font-family: "Roboto", sans-serif;
+   font-size: 1rem;
+   padding-bottom: 1rem;
+}
+
+.image {
+   margin: 0;
+   padding: .5rem;
+   padding-left: 1rem;
+   width: calc(50vw - 2rem);
+   height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+   .full-page {
+      padding-bottom: 50vh;
+   }
+
+   .side-by-side {
+      grid-template-columns: 1fr;
+   }
+
+   .half-page {
+      width: 100vw;
+   }
+
+   .image {
+      width: calc(100vw - 2rem);
+   }
+}
+</style>
